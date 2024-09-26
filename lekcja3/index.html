@@ -1,0 +1,51 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    <script>
+        imie = prompt("Jak masz na imię? ");
+        document.write("siema z tej strony Kacper, witaj " + imie + '<br>');
+        
+        let wiek;
+        do {
+            wiek = parseInt(prompt("Ile masz lat?"));
+        } while(isNaN(wiek));
+        if (wiek>=15){
+            document.write("Widze ze masz 15 lat lub więcej<br>");
+        }else{
+            document.write("Ciekawie jest byc tak mlodym<br>");
+        }
+    
+        klasa = confirm("Czy jesteś uczniem klasy 3I? ");
+        if (klasa){
+            document.write("Cieszę sie ze jestes uczniem naszej klasy"+ '<br>');
+        }else{
+            document.write("Szkoda ze nie jesteś uczniem naszej klasy"+ '<br>');
+        }
+
+        dodawanie = confirm("Czy chcesz zeby dodał do siebie 2 liczby? ");
+
+        if (dodawanie){
+            let num1;
+            let num2;
+            do {
+                num1 = parseInt(prompt("Podaj 1 liczbe: "));
+            } while(isNaN(num1));
+            do{
+                num2 = parseInt(prompt("Podaj 2 liczbe: "));
+            } while(isNaN(num2));
+            let wynik;
+            wynik = num1 + num2;
+            document.write("Taki jest wynik dodania <b>" + num1 + ' + ' + num2 +'</b> = ' + wynik);
+        }else{
+            document.write("Szkoda ze nie chcesz dodawać :(");
+        }
+
+
+    </script>
+    </body>
+    </html>

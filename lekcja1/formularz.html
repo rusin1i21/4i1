@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="akcja.php" method="post">
+        <h2>Formularz</h2>
+        <label for="tekst">Pole tekstowe</label>
+        <input type="text" name="tekst" id="tekst"><br><br>
+
+        <label for="haslo">Hasło</label>
+        <input type="password" name="haslo" id="haslo"><br><br>
+
+        <label for="data">Data</label>
+        <input type="date" name="data" id="data">
+        
+        <fieldset>
+            <legend>Checkbox</legend>
+            <input type="checkbox" name="checkbox" id="checkbox1" value="1">
+            <label for="checkbox1">Opcja 1</label>
+            <input type="checkbox" name="checkbox" id="checkbox2" value="2">
+            <label for="checkbox2">Opcja 2</label>
+        <br><br>  
+        </fieldset>        
+        <fieldset>
+
+        <legend>Radio</legend>
+            <input type="radio" name="radio" id="radio1" value="1">
+            <label for="radio1">Opcja 1</label>
+            <input type="radio" name="radio" id="radio2" value="2">
+            <label for="radio2">Opcja 2</label>
+            <br><br>
+
+        </fieldset><br>
+
+        <label for="textarea">Pole z tekstem</label><br>
+        <textarea name="textarea" id="textarea" cols="50" rows="5" placeholder="Napisz coś ciekawego"></textarea><br>
+        <input type="reset" value="Zresetuj"><br><br>
+        
+        <input type="submit" value="Wyślij"><br><br>
+
+    </form>
+</body>
+</html>

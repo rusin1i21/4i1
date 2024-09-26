@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>sigmacreeper JS</h1>
+    </header>
+    <script>
+        //document.write('napisz cos super<br>');
+        let liczba1;
+        let liczba2;
+        let znak;
+        do {
+            liczba1 = parseInt(prompt("Wprowadź liczbę"));
+        } while(isNaN(liczba1)){
+            document.write("Oto twoja liczba 1 : ");
+        }
+        do{
+            liczba2 = parseInt(prompt("Wprowadź 2 liczbę"));
+        }while (isNaN(liczba2)){
+            document.write("Oto twoja liczba 2 :");
+        }
+        liczba3 = parseInt(prompt("Podaj liczbe którą bedizemy doliczac"))
+        for (let i = 1 ; i<=liczba3;i++){
+            document.write('Pętla wykonana po raz' + i + '<br>')
+        }
+        znak = prompt("Wprowadź znak (+ * - /): ");
+           switch(znak){
+                    case '+':
+                        document.write("Wynik: " + (liczba1+ liczba2));
+                        break;
+                    case '-':
+                        document.write("Wynik: " + (liczba1 - liczba2));
+                        break;
+                    case '*':
+                        document.write("Wynik: " + (liczba1 * liczba2));
+                        break;
+                    case '/':
+                        if (liczba2 == 0){
+                            document.write("Nie wolno dzielić przez 0")
+                        } else{
+                            document.write("Wynik: " + (liczba1/liczba2))
+                        }
+                        break;
+                    default:
+                        document.write("Podałeś błędny znak");
+                    break;
+                
+        }
+        // if(znak== '+' ){
+        //     document.write('<p> Wynik : '+ (liczba1+liczba2)+'</p>');}
+        // else if(znak=='-'){
+        //     document.write('<p> Wynik : '+ (liczba1-liczba2)+'</p>');}
+        // else if(znak=='*'){
+        //     document.write('<p> Wynik : '+ (liczba1*liczba2)+'</p>');}
+        // else if(znak=='/'){
+        //     if(liczba2==0){
+        //         document.write('nie mozna dzielic przez 0')
+        //     }else {
+        //     document.write('<p> Wynik : '+ (liczba1/liczba2)+'</p>');}}
+        // else{
+        //     document.write('wprowadź poprawny znak ')
+        // }    
+        
+    </script>
+</body>
+</html>
